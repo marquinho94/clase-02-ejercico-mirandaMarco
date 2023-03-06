@@ -16,6 +16,7 @@
     font-family: 'Roboto Mono', monospace;
 
 }
+
 :root{
 
     /* VARIABLES */
@@ -23,6 +24,10 @@
     --padding-container: 80px 0;
     --color-title: #d9cddb;
     --color-bg-hero: #ff00ea;
+    --color-hero:#ffdffc;
+    --color-links: #ffffff;
+    --color-bg-saludo:#bd00b3;
+    --color-saludo:#ffd0f9;
 }
 
 
@@ -34,17 +39,121 @@ body{
 .hero {
 
     width: 100vw;
-    height: 100vh;
-    background-color: var(--color-bg-hero);
+    height: 80vh;
+    min-height: 600px;
+    max-height: 800px;
+    /* background-color: var(--color-bg-hero); */
+    border-style: dotted;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    color: var(--color-hero);
 
+    
+
+    
+
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%,rgba(0, 0, 0, 0.5) 100%), url(/Proyecto_clase/img/matethink.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 50%, 61% 90%, 35% 90%, 0% 50%);
+    z-index: -1;
 }
 
 .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto; /* auto para centrar en pantalla*/
-    border-style: dashed; /* para diferenciar provisorio */
+    padding: var(--padding-container);
+    /* overflow: hidden; */
+    /* background-color: rgb(116, 116, 116); */
+    /* clip-path: polygon(0 0, 100% 1%, 100% 50%, 61% 90%, 35% 90%, 0% 50%); */
+
     
+
 
 }
 
+.nav{
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.navTitle{
+    font-weight: 400;
+    
+}
+
+
+.navLink{
+    margin-left: auto;
+    pading: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 3em;
+}
+
+.navItems{
+    list-style: none;
+}
+.navLinks{
+    color: var(--color-links);
+    text-decoration: none;
+}
+
+.navMenu{
+    margin-left: auto;
+    cursor: pointer;
+    /* solo para mobile */
+    display: none;
+}
+
+.navClose{
+    display: none;
+}
+
+.heroContainer{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 2em;
+    padding-bottom: 20%;
+    text-align: center;
+
+}
+
+.heroTitle{
+    font-size: 3rem;
+}
+
+.heroParagraph{
+    margin-bottom: auto;
+}
+
+.saludo{
+    display: inline-block;
+    background-color: var(--color-bg-saludo);
+    justify-self: center;
+    color: var(--color-saludo);
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
