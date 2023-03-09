@@ -209,8 +209,10 @@ body {
 
     display: block;
     border-radius: 32px;
-    object-fit: fill;
-    width: minmax(100%, 320px);
+    object-fit:cover ;
+    overflow: hidden;
+    width: 320px;
+    height: 320px;
     justify-self: center;
 
 }
