@@ -1,1 +1,1 @@
-Los iconos utilizados pertecen a boxicons.com copiando el código svg
+Los iconos utilizados pertecen a boxicons.com copiando el código svg....Alguno puede ser de iconify
