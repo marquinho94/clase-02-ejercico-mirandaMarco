@@ -213,8 +213,10 @@ body {
 
     display: block;
     border-radius: 32px;
-    object-fit: fill;
-    width: minmax(100%, 320px);
+    object-fit:cover ;
+    overflow: hidden;
+    width: 320px;
+    height: 320px;
     justify-self: center;
 
 }
@@ -272,7 +274,7 @@ iframe{
 }
 
 .redes{
-
+    position: relative;
     width: 100%;
     min-height: 200px;
     max-height: 320px;
@@ -283,11 +285,12 @@ iframe{
 
 .redesContainer{
     /* position: relative; */
-    padding: 10%;
+    /* padding: 10px 10px; */
     display:flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 80%;  
-    align-content: space-around;
+    align-content: center;
     justify-content: space-between;
     gap: 32px;
 
