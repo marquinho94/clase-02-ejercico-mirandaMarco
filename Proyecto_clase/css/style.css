@@ -9,10 +9,13 @@
 /* VARIABLES*/
 
 
--- * {
+* {
     font-family: 'Roboto Mono', monospace;
 
 }
+
+
+
 
 :root {
 
@@ -29,6 +32,7 @@
     --color-bg: rgb(41, 76, 255);
     --color-gradiente-1: rgba(41, 76, 255, 1);
     --color-gradiente-2: rgba(255, 39, 200, 0.9360119047619048);
+    --color-redes:rgb(0, 37, 78);
 
 }
 
@@ -215,6 +219,11 @@ body {
 
 }
 
+.acercaDeTitulos{
+
+    color: var(--color-redes);
+}
+
 div {
     justify-self: center;
 }
@@ -267,6 +276,8 @@ iframe{
     width: 100%;
     min-height: 200px;
     max-height: 320px;
+    color: var(--color-redes);
+
 
 }
 
@@ -285,7 +296,7 @@ iframe{
 .red{
 
     display: block;
-    border: 2px solid black;
+    border: 2px solid var(--color-redes);
     border-radius: 32px;
     text-align: center;
     min-width: 120px;

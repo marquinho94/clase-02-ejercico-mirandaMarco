@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio_clase02</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 
     <!-- favicon -->
     <link rel="shortcut icon" href="img/icons8-relámpago-64.png" type="image/png">
@@ -26,8 +27,8 @@
 
 <body>
     <script src="js/saludo.js"></script>
-    <header>
-        <header class="hero">
+   
+        <header class="hero" id="inicio">
             <nav class="nav container">
                 <div class="navLogo">
                     <h2 class="navTitle"> REACT Clase02 </h2>
@@ -35,13 +36,13 @@
 
                 <ul class="navLink navLink--menu">
                     <li class="navItems">
-                        <a href="#" class="navLinks">Inicio</a>
+                        <a href="#inicio" class="navLinks">Inicio</a>
                     </li>
                     <li class="navItems">
-                        <a href="#" class="navLinks">Acerca de</a>
+                        <a href="#acerca de" class="navLinks">Acerca de</a>
                     </li>
                     <li class="navItems">
-                        <a href="#" class="navLinks">Contacto</a>
+                        <a href="#contacto" class="navLinks">Contacto</a>
                     </li>
                     <li class="navItems">
                         <a href="#redes" class="navLinks">Redes</a>
@@ -67,7 +68,7 @@
         </header>
 
         <main>
-            <section class="acercaDeContainer container">
+            <section class="acercaDeContainer container" id="acerca de">
 
 
                 <div class="acercaDeEncabezado">
@@ -130,7 +131,7 @@
 
 
 
-            <section class="contacto">
+            <section class="contacto" id="contacto">
 
                 <div class="contactoContainer container">
 
@@ -142,7 +143,7 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="contactoTexto">
-                        <h2>Por acá andamos</h2>
+                        <h2 class="acercaDeTitulos">Por acá andamos</h2>
                         <p>Si me queres contactar podes enviarme un mail <a href="mailto:marcoalanmiranda@gmail.com">aquí</a></p>
                         <br>
                         <p>O seguime en <a href="">mis Redes</a></p>
@@ -156,7 +157,7 @@
 
             <section class="redes" id="redes">
 
-                <div class="redesContainer">
+                <div class="redesContainer container">
 
                     <div class="red">
                         <img src="img/icons/bxl-twitter.svg" alt="">
